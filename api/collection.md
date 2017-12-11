@@ -2,7 +2,7 @@
 layout: api
 title: Collection
 id: api-collection
-permalink: /api/collection/
+permalink: /api/collection.html
 ---
 
 The `Collection` object represents a group of related documents, and is backed by a RethinkDB table. Documents in a `Collection` are identified by a unique key stored in the `id` field.
@@ -354,9 +354,6 @@ Collection.order(field[, direction])
 
 Fields passed to `order` may contain numbers, strings, or even arrays or objects; non-numeric values will be sorted lexicographically, and strings are sorted by UTF-8 codepoint. (Read about [Sorting order][so] and [ReQL data types][dt] in general.)
 
-[so]: https://rethinkdb.com/docs/data-types/#sorting-order
-[dt]: https://rethinkdb.com/docs/data-types/
-
 The optional second argument must be a string indication sort direction, either `"ascending"` or `"descending"`. The default is `"ascending"`.
 
 ```js
@@ -548,8 +545,8 @@ The `upsert` method is a combination of `insert` and `update`:
 
 Queries on multiple Horizon Collections can be combined using the [Horizon.aggregate()][hzagg] method, and aggregates can be turned into parameterized templates using the [Horizon.model()][hzmod] method. Read their documentation for details.
 
-[hzagg]: /api/horizon/#aggregate
-[hzmod]: /api/horizon/#model
+[hzagg]: $$ROOT$$/api/horizon.html#aggregate
+[hzmod]: $$ROOT$$/api/horizon.html#model
 
 ## RxJS Observable methods and operators
 

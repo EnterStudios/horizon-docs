@@ -2,12 +2,12 @@
 layout: documentation
 title: Embedding Horizon
 id: embed
-permalink: /docs/embed/
+permalink: /docs/embed.html
 ---
 
 While you can start the Horizon server from the `hz` [command line tool][cli], it's also possible to embed it into a Node web app by importing `@horizon/server` and passing a server connection to the Horizon constructor.
 
-[cli]: /docs/cli
+[cli]: $$ROOT$$/docs/cli.html
 
 For instance, using the [Express][] framework, the steps are:
 
@@ -52,11 +52,11 @@ Express and Horizon are required, and Express is instantiated with `app.listen()
 
 **Note:** Passing options to the constructor is the only way to configure the Horizon server when it's embedded. The `.hz/config.toml` configuration file will not be read.
 
-[cf]: /docs/configuration
+[cf]: $$ROOT$$/docs/configuration.html
 
 For some examples with other frameworks, including Koa and Hapi, consult the Horizon [examples page][ex].
 
-[ex]: /docs/examples
+[ex]: $$ROOT$$/docs/examples.html
 
 ## Configuring OAuth providers
 
@@ -74,7 +74,7 @@ horizonServer.add_auth_provider(
 
 For more details on setting up Oauth, read the section in [Authentication][a].
 
-[a]: /docs/auth/#oauth
+[a]: $$ROOT$$/docs/auth.html#oauth
 
 ## Attaching Horizon to multiple HTTP servers
 

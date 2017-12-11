@@ -2,7 +2,7 @@
 layout: documentation
 title: Frequently asked questions
 id: faq
-permalink: /faq/
+permalink: /faq.html
 active: faq
 ---
 
@@ -34,7 +34,7 @@ Horizon is built on top of RethinkDB and Node.js. You can install Horizon via `n
 
 For more details, read the [Installation guide][ig].
 
-[ig]: /install
+[ig]: $$ROOT$$/install.html
 
 ## How do I get started with Horizon? ##
 
@@ -45,7 +45,7 @@ You can create a new Horizon app and start it as follows:
 
 For more details, see the [Getting Started][gs] guide.
 
-[gs]: /docs/getting-started
+[gs]: $$ROOT$$/docs/getting-started.html
 
 ## What does the code look like? ##
 

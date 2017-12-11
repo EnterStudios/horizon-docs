@@ -2,7 +2,7 @@
 layout: api
 title: Horizon
 id: api-horizon
-permalink: /api/horizon/
+permalink: /api/horizon.html
 ---
 
 The `Horizon` object instantiates and manages the connection to the Horizon server.
@@ -56,7 +56,7 @@ query.subscribe(uuid => {
 
 A `Horizon` object can be called as a function, taking a string as its argument. It returns a [Collection][col] object:
 
-[col]: /api/collection
+[col]: $$ROOT$$/api/collection.html
 
 ```js
 // Return the messages Collection
@@ -144,10 +144,10 @@ template = "collection('users').find({id: userId()})"
 
 See [Permissions][perm] for more information on how to configure access rules, and [Authentication][auth] to find out how to configure user authentication on the Horizon server.
 
-[watch]: /api/collection/#watch
-[fetch]: /api/collection/#fetch
-[users]: /docs/users
-[perm]: /docs/permissions
+[watch]: $$ROOT$$/api/collection.html#watch
+[fetch]: $$ROOT$$/api/collection.html#fetch
+[users]: $$ROOT$$/docs/users.html
+[perm]: $$ROOT$$/docs/permissions.html
 
 ## Horizon.authEndpoint {#authendpoint}
 
@@ -165,7 +165,7 @@ Horizon.clearAuthTokens();
 
 See [Authentication][auth] for more details.
 
-[auth]: /docs/auth
+[auth]: $$ROOT$$/docs/auth.html
 
 ## Horizon.aggregate {#aggregate}
 
@@ -187,7 +187,7 @@ hz.aggregate({
 
 (In real code, [subscribe()][sub] would contain a callback function to receive the Observable results from [watch()][watch].)
 
-[sub]: /api/collection/#subscribe
+[sub]: $$ROOT$$/api/collection.html#subscribe
 
 The values for fields in aggregates may contain:
 
@@ -211,7 +211,7 @@ will be emitted every time the document in the `result` query is changed and eve
 
 Arrays are not flattened. A field/value such as `dogShow: [hz('owners'), hz('pets')]` will result in output similar to `[['bob', 'agatha', ...], ['fluffy', 'fido', ...]]`. (Use [merge()][merge] for a union query.)
 
-[merge]: /api/collection/#merge
+[merge]: $$ROOT$$/api/collection.html#merge
 
 Aggregates can be nested, although this is equivalent to simply using objects for the "inner" aggregates.
 

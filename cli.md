@@ -2,7 +2,7 @@
 layout: documentation
 title: The Horizon CLI
 id: cli
-permalink: /docs/cli/
+permalink: /docs/cli.html
 ---
 
 The `hz` command line tool's primary function is to start a standalone Horizon server. It also provides utilities for initializing a new Horizon project, creating a self-signed SSL certificate, and other tasks.
@@ -22,7 +22,7 @@ The `hz serve <project path>` command starts a Horizon server for the given Hori
 
 Every Horizon server requires a RethinkDB server to connect to. Use the `--connect <RethinkDB host>` option to connect to an existing RethinkDB server, or use `--start-rethinkdb` to automatically start a local RethinkDB server. (Note that the `--dev` option for development mode includes `--start-rethinkdb` by default.)
 
-Note that if you are using a database from a Horizon 1.x application, the `serve` command will exit with an error. Use [hz migrate]{#migrate} to upgrade your database in place.
+Note that if you are using a database from a Horizon 1.x application, the `serve` command will exit with an error. Use [hz migrate](#migrate) to upgrade your database in place.
 
 ## Command-line options {#serve-options}
 
@@ -44,7 +44,7 @@ Note that if you are using a database from a Horizon 1.x application, the `serve
 * `--cert-file PATH` The certificate to use for the HTTPS server. Default: `./horizon-cert.pem`
 * `--rdb_timeout SECONDS`: timeout to make the connection to the RethinkDB cluster, in seconds. Default: 20
 
-[rdbopts]: /docs/configuration/#rdbopts
+[rdbopts]: $$ROOT$$/docs/configuration.html#rdbopts
 
 The following options provide alternatives to specifying these values in the `--connect` string:
 
@@ -73,9 +73,9 @@ The following options provide alternatives to specifying these values in the `--
 * `--auto-create-collection [yes|no]` Create collections automatically on first use. Warning: Enabling this on a production server is a security risk and can be used by an attacker to exhaust the server's resources. Only recommended for development use. Default: `no`
 * `--auto-create-index [yes|no]` Create indexes automatically on first use. Warning: Enabling this on a production server is a security risk and can be used by an attacker to exhaust the server's resources. Only recommended for development use.  Default: `no`
 
-[auth]: /docs/auth
-[config-file]: /docs/configuration
-[permissions]: /docs/permissions
+[auth]: $$ROOT$$/docs/auth.html
+[config-file]: $$ROOT$$/docs/configuration.html
+[permissions]: $$ROOT$$/docs/permissions.html
 
 ## Development mode {#development-mode}
 
@@ -106,7 +106,7 @@ Note that the certificate created by `create-cert` uses no local identity inform
 
 Save the currently defined Horizon schema, including validation rules, collection and index specifications, as a TOML file. For an example of this command in practice, read the section on "Configuring rules" in [Permissions and schema enforcement][perm].
 
-[perm]: /docs/permissions/#configuring
+[perm]: $$ROOT$$/docs/permissions.html#configuring
 
 Run `hz schema save -h` for details on options.
 
@@ -134,4 +134,4 @@ The JWT will be printed to the console.
 
 For more details, read "Making an admin auth token" in [Permissions and schema enforcement][admin].
 
-[admin]: /docs/permissions/#admin
+[admin]: $$ROOT$$/docs/permissions.html#admin

@@ -2,14 +2,14 @@
 layout: documentation
 title: Horizon authentication
 id: auth
-permalink: /docs/auth/
+permalink: /docs/auth.html
 ---
 
 Horizon uses [JSON Web Tokens][jwt] for user authentication, an [open industry standard][rfc7519]. Depending on your application, you can choose one of three types of authentication handling by passing the `authType` option to the [Horizon object constructor][hoc].
 
 [jwt]:     https://jwt.io
 [rfc7519]: https://tools.ietf.org/html/rfc7519 "RFC 7519: JSON Web Token (JWT)"
-[hoc]:     /api/horizon/#constructor
+[hoc]:     $$ROOT$$/api/horizon.html#constructor
 
 * `unauthenticated`: do not generate a web token, and do not create entries in the Horizon user table. This essentially bypasses Horizon's authentication system, and is best for applications that don't need to store any user data.
 * `anonymous`: generate a unique token for each new user, and create an entry in the users table for the generated token. This allows authentication through the generated token, which is stored client-side in [localStorage][ls].
@@ -20,7 +20,7 @@ Horizon uses [JSON Web Tokens][jwt] for user authentication, an [open industry s
 
 You may also pass an already-created JWT to `authType`; this is useful for bootstrapping the admin user, or for integrating with non-browser-based authentication methods. Read "Making an admin auth token" in [Permissions and schema enforcement][admin] for more details.
 
-[admin]: /docs/permissions/#admin
+[admin]: $$ROOT$$/docs/permissions.html#admin
 
 # Using local authentication
 
@@ -66,7 +66,7 @@ Each provider will let you register your application, and will give you the clie
 
 In order to use OAuth with Horizon, you'll need to configure a TLS certificate so you can serve assets with HTTPS, and either specify the `--key-file` and `--cert-file` options to `hz serve` or add them to the server's `.hz/config.toml` file. (See [The config.toml file][cf] for more details.) You can create a self-signed certificate with `hz create-cert`.
 
-[cf]: /docs/configuration
+[cf]: $$ROOT$$/docs/configuration.html
 
 You'll need to enter `id` and `secret` values in the `.hz/secrets.toml` file for your server (along with `host` and `redirect_url` values for Auth0). Toward the bottom of the automatically generated file, you'll see commented-out sample settings. Uncomment the appropriate lines and replace the dummy values with the ones you've received from the application provider. Adding Github OAuth configuration data would look like this:
 
@@ -100,7 +100,7 @@ If instead you only see empty brackets (e.g., `{ }`), ensure you've restarted th
 
 **Note:** If your application embeds Horizon rather than using `hz serve`, you'll need to pass the OAuth endpoint to that object. Read "Configuring OAuth providers" in [Embedding Horizon][eh] for details.
 
-[eh]: /docs/embed
+[eh]: $$ROOT$$/docs/embed.html
 
 ## Configuring the client application
 
@@ -134,10 +134,10 @@ Horizon.clearAuthTokens();
 
 You can check whether a user is currently authenticated using the [Horizon.hasAuthToken][ha] method, and access their information with [Horizon.currentUser][cu]. For more information, read about [Users and groups][ug] and [Permissions and schema enforcement][perm].
 
-[ha]:   /api/horizon/#hasauthtoken
-[cu]:   /api/horizon/#currentuser
-[ug]:   /docs/users
-[perm]: /docs/permissions
+[ha]:   $$ROOT$$/api/horizon.html#hasauthtoken
+[cu]:   $$ROOT$$/api/horizon.html#currentuser
+[ug]:   $$ROOT$$/docs/users.html
+[perm]: $$ROOT$$/docs/permissions.html
 
 ## Notes about Horizon's OAuth support
 
@@ -149,4 +149,3 @@ You can check whether a user is currently authenticated using the [Horizon.hasAu
 [pp]: http://passportjs.org
 [ex]: http://expressjs.com
 [gi]: https://github.com/rethinkdb/horizon/issues/new
-[eh]: /docs/embed

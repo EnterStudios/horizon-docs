@@ -2,7 +2,7 @@
 layout: documentation
 title: Permissions and schema enforcement
 id: permissions
-permalink: /docs/permissions/
+permalink: /docs/permissions.html
 ---
 
 * Table of Contents
@@ -18,7 +18,7 @@ A whitelist rule has three properties that define which operations it covers:
 * A query template describing the type of operation
 * An optional validator function written in JavaScript that can be used to check the contents of the accessed documents, or to implement more complex permission checks
 
-[users]: /docs/users
+[users]: $$ROOT$$/docs/users.html
 
 You can use the special `"default"` group to create rules that apply to all users, authenticated or not. Or use the `"authenticated"` group to cover authenticated users only.
 
@@ -68,7 +68,7 @@ A given document can be read or written to by a user, if there is at least one r
 
 Note that permissions are not enforced when running the Horizon server in [development mode][dev-mode]. This is so that you can easily change and prototype the queries in your application without having to deal with maintaining corresponding entries in the whitelist.
 
-[dev-mode]: /docs/server#development-mode
+[dev-mode]: /docs/server.html#development-mode
 
 # Configuring rules {#configuring}
 
@@ -258,7 +258,7 @@ The `userId()` placeholder matches the ID of the currently authenticated user (s
 template = "collection('messages').findAll({owner: userId()})"
 ```
 
-[auth]: /docs/auth
+[auth]: $$ROOT$$/docs/auth.html
 
 # Validator functions {#validator_functions}
 
@@ -378,7 +378,7 @@ While there is no single rule that validates all results of the query, for each 
 
 # Making an admin auth token {#admin}
 
-To log in as the admin user initially, your application will need to be bootstrapped using the [hz make-token](/cli/#make-token) command.
+To log in as the admin user initially, your application will need to be bootstrapped using the [hz make-token]($$ROOT$$/cli/#make-token) command.
 
 ```sh
 hz make-token admin

@@ -2,13 +2,13 @@
 layout: documentation
 title: Users and groups
 id: users
-permalink: /docs/users/
+permalink: /docs/users.html
 ---
 
 When you use Horizon's [Authentication system][auth], user information is stored in a special Horizon [collection][coll], `users`. You can use the `users` collection the same way you use any other collection, or through a special shortcut accessor:
 
-[auth]: /docs/auth
-[coll]: /api/collection
+[auth]: $$ROOT$$/docs/auth.html
+[coll]: $$ROOT$$/api/collection.html
 
 ```js
 const horizon = Horizon();
@@ -22,7 +22,7 @@ const users = horizon.users;
 
 When a new user is created, they're automatically assigned to two user groups, `default` and `authenticated`. User groups are used to assign permissions; for more information about the way the permission system works, read [Permissions and schema enforcement][perm]. The document created for each new user contains their unique ID and a list of groups they belong to:
 
-[perm]: /docs/permissions
+[perm]: $$ROOT$$/docs/permissions.html
 
 ```json
 {
@@ -71,9 +71,9 @@ if (Horizon.hasAuthToken()) {
 
 The `currentUser` is a user object as described in [Users and groups][users], or an empty object if the user is unauthenticated.
 
-[ha]:    /api/horizon/#hasauthtoken
-[cu]:    /api/horizon/#currentuser
-[users]: /docs/users
+[ha]:    $$ROOT$$/api/horizon.html#hasauthtoken
+[cu]:    $$ROOT$$/api/horizon.html#currentuser
+[users]: $$ROOT$$/docs/users.html
 
 ## See also
 

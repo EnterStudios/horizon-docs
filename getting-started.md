@@ -2,7 +2,7 @@
 layout: documentation
 title: Getting started with Horizon
 id: getting-started
-permalink: /docs/getting-started/
+permalink: /docs/getting-started.html
 hero_image: /images/docs/getting-started.png
 ---
 
@@ -10,7 +10,7 @@ If you haven't installed Horizon, do so now. (Read the [Installation instruction
 
     npm install -g horizon
 
-[install]: /install
+[install]: $$ROOT$$/install.html
 
 * Table of Contents
 {:toc}
@@ -79,8 +79,8 @@ You can find the complete list of [command line flags][cli] for `hz serve` in th
 
 In production (i.e., without the `--dev` flag), you'll use the `.hz/config.toml` file to set these and other options. See [Configuring Horizon][config-file] for details.
 
-[cli]: /docs/cli
-[config-file]: /docs/configuration
+[cli]: $$ROOT$$/docs/cli.html
+[config-file]: $$ROOT$$/docs/configuration.html
 
 ## Talk to Horizon
 
@@ -113,9 +113,9 @@ The two `script` tags do the work here. The first loads the actual Horizon clien
 * Our connection function simply fills in `"App works!"` into the `<h1>` tag in the document. Since this function only gets executed on a successful connection, it *does* verify that Horizon is working, but it's not leveraging RethinkDB for anything yet.
 * Also, we're sorry for the `<marquee>` tag.
 
-[ho]: /api/horizon
-[co]: /api/collection
-[hc]: /api/horizon/#onready
+[ho]: $$ROOT$$/api/horizon.html
+[co]: $$ROOT$$/api/collection.html
+[hc]: $$ROOT$$/api/horizon.html#onready
 
 ## Horizon Collections
 
@@ -142,8 +142,8 @@ chat.store(message);
 
 To retrieve documents, use [fetch][fe].
 
-[st]: /api/collection/#store
-[fe]: /api/collection/#fetch
+[st]: $$ROOT$$/api/collection.html#store
+[fe]: $$ROOT$$/api/collection.html#fetch
 
 ```js
 chat.fetch().subscribe(
@@ -169,8 +169,8 @@ We use the RxJS [subscribe][sub] method to receive items from the collection, as
 
 To remove documents from a collection, use either [remove][rem] or [removeAll][rema].
 
-[rem]:  /api/collection/#remove
-[rema]: /api/collection/#removeall
+[rem]:  $$ROOT$$/api/collection.html#remove
+[rema]: $$ROOT$$/api/collection.html#removeall
 
 ```js
 // These two queries are equivalent and will remove the document with id: 1
@@ -187,7 +187,7 @@ As with the other functions, you can chain `subscribe` onto the remove functions
 
 We can "listen" to an entire collection, query, or a single document by using [watch][]. This lets us build apps that update state immediately as data changes in the database.
 
-[watch]: /api/collection/#watch
+[watch]: $$ROOT$$/api/collection.html#watch
 
 ```js
 // Watch all documents. If any of them change, call the handler function.
@@ -228,9 +228,7 @@ chat.order("datetime").watch().subscribe(
 
 To learn more about how Horizon works with React, check out the [complete Horizon & React example][apps].
 
-[vue]: https://vuejs.org/
-[react]: https://facebook.github.io/react/
-[apps]: /docs/examples
+[apps]: $$ROOT$$/docs/examples.html
 
 ## Putting it all together
 
@@ -387,5 +385,5 @@ const horizon = Horizon({host: 'localhost:8181'});
 * Read the [Collection][co] and [Horizon][ho] API documentation.
 * The [Horizon sample apps][apps] can show you how to integrate Horizon with popular frameworks such as React and Angular.
 
-[auth]: /docs/auth
-[perm]: /docs/permissions
+[auth]: $$ROOT$$/docs/auth.html
+[perm]: $$ROOT$$/docs/permissions.html

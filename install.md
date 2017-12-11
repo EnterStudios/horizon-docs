@@ -2,7 +2,7 @@
 layout: documentation
 title: Installing Horizon
 id: install
-permalink: /install/
+permalink: /install.html
 active: install
 ---
 
@@ -10,7 +10,7 @@ active: install
 
 Horizon is a rapidly evolving framework, and depending on your use case, there's still a chance of encountering bugs or unusual quirks. Read the [limitations][l] page for important notes and caveats.
 
-[l]: /docs/limitations
+[l]: $$ROOT$$/docs/limitations.html
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ This will install Horizon and its command line tool, `hz`. (The same tool will a
 
 **Now, go on to [Getting Started][gs]!**
 
-[gs]: /docs/getting-started
+[gs]: $$ROOT$$/docs/getting-started.html
 
 ## Working on Horizon itself
 

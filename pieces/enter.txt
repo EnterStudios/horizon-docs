@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<title>$$TITLE$$</title>
+<style type="text/css">
+body {
+    font-family: Go, Arial, sans-serif;
+    max-width: 45em;
+    background-color: #fff;
+    border-top: 0.3em blue;
+    color: black;
+    margin-left: 2em;
+}
+</style>
+<body>
+<h1>$$TITLE$$</h1>

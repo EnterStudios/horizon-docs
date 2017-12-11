@@ -2,7 +2,7 @@
 layout: documentation
 title: Configuration files
 id: configuration
-permalink: /docs/configuration/
+permalink: /docs/configuration.html
 ---
 
 Options for Horizon apps are set by two [TOML][] files in the app's root directory:

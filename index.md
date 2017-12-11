@@ -2,7 +2,7 @@
 layout: documentation
 title: RethinkDB Horizon
 id: index
-permalink: /docs/
+permalink: /docs/index.html
 ---
 
 RethinkDB Horizon is an open-source developer platform for building realtime, scalable web apps. It is built on top of RethinkDB, and allows app developers to get started with building modern, engaging apps without writing any backend code.
@@ -15,15 +15,22 @@ Horizon consists of three components:
 
 ## Using Horizon
 
-* [Installing Horizon & RethinkDB](/install): an overview of installing the RethinkDB and Horizon servers.
-* [Getting started](/docs/getting-started): get up to speed on Horizon's basics.
+* [Installing Horizon & RethinkDB]($$ROOT$$/install.html): an overview of installing the RethinkDB and Horizon servers.
+* [Getting started]($$ROOT$$/docs/getting-started.html): get up to speed on Horizon's basics.
 * The Horizon API: learn about the two JavaScript classes at the heart of Horizon:
-    * [Horizon](/api/horizon) (the connection management class)
-    * [Collection](/api/collection) (the data management class)
-* [Permissions](/docs/permissions): how Horizon's permissions and schema enforcement system works.
-* [Users and groups](/docs/users/): an overview of Horizon's user management system.
-* [Authentication](/docs/auth): integrating Horizon apps with Github, Twitter and other OAuth providers.
+    * [Horizon]($$ROOT$$/api/horizon.html) (the connection management class)
+    * [Collection]($$ROOT$$/api/collection.html) (the data management class)
+* [Permissions]($$ROOT$$/docs/permissions.html): how Horizon's permissions and schema enforcement system works.
+* [Users and groups]($$ROOT$$/docs/users.html): an overview of Horizon's user management system.
+* [Authentication]($$ROOT$$/docs/auth.html): integrating Horizon apps with Github, Twitter and other OAuth providers.
 * Running the Horizon server:
-    * [CLI](/docs/cli): running the `hz` command line tool.
-    * [Embedding](/docs/embed): using Horizon with web frameworks like Express and Koa.
-* [Configuration](/docs/configuration): all about the Horizon configuration file, `.hz/config.toml`.
+    * [CLI]($$ROOT$$/docs/cli.html): running the `hz` command line tool.
+    * [Embedding]($$ROOT$$/docs/embed.html): using Horizon with web frameworks like Express and Koa.
+* [Configuration]($$ROOT$$/docs/configuration.html): all about the Horizon configuration file, `.hz/config.toml`.
+
+## About This Documentation
+
+This documentation is Copyright (c) the Linux Foundation, modified by
+[Sam Hughes](http://samuelhughes.com/) to get it working as a static
+website, and is provided under the [Creative Commons
+Attribution-ShareAlike License]($$ROOT$$/LICENSE).

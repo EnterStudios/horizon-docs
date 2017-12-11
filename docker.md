@@ -2,7 +2,7 @@
 layout: documentation
 title: Using Horizon with Docker
 id: docker
-permalink: /docs/docker/
+permalink: /docs/docker.html
 ---
 
 It's quick and easy to get Horizon up and running with Docker! The only dependencies are current versions of `node` and `npm`.
@@ -22,7 +22,7 @@ docker run -e RETHINKDB_URI=EXAMPLE_HOST:28015 -v ./:/usr/app rethinkdb/horizon
 
 The container makes no other assumptions about your deployment configuration. To set other Horizon configuration options, you can set `HZ_*` environment variables, as described in [the config.toml file][config]. (All the configuration variables that can normally be specified in `.hz/config.toml` can be overridden with environment variables.)
 
-[config]: /docs/configuration
+[config]: $$ROOT$$/docs/configuration.html
 
 ## Using Docker Compose
 
