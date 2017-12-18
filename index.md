@@ -34,3 +34,5 @@ This documentation is Copyright (c) the Linux Foundation, modified by
 [Sam Hughes](http://samuelhughes.com/) to get it working as a static
 website, and is provided under the [Creative Commons
 Attribution-ShareAlike License]($$ROOT$$/LICENSE).
+
+The static site generation code can be found at <https://github.com/srh/horizon-docs/>.
